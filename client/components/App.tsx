@@ -1,21 +1,25 @@
-import { useState, useEffect } from 'react'
-
 import { getWelcome } from '../apiClient.ts'
+import { useQuery } from '@tanstack/react-query'
 
 function App() {
-  const [welcomeStatement, setWelcomeStatement] = useState('')
-
-  useEffect(() => {
-    getWelcome()
-      .then((res) => {
-        setWelcomeStatement(res.statement)
-      })
-      .catch((err) => {
-        console.error(err.message)
-      })
+  const {
+    data: welcome,
+    isPending,
+    isError,
+  } = useQuery({
+    queryKey: ['welcome'],
+    queryFn: () => getWelcome(),
   })
 
-  return <h1>{welcomeStatement}</h1>
+  if (isPending) {
+    return <p>Loading...</p>
+  }
+
+  if (isError) {
+    return <p>There was an error</p>
+  }
+
+  return <h1>{welcome.statement}</h1>
 }
 
 export default App

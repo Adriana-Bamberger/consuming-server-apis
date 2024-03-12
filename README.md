@@ -47,9 +47,6 @@ In addition to hitting our own APIs with JavaScript, we can also make use of API
       YOUR_API_KEY_NAME=<api key>
       ```
 
-      ```json
-   ```
-
 </details>
 
 Some possibilities are listed below if you want a place to start, otherwise find one of your own!
@@ -120,4 +117,4 @@ This challenge can be used for the following trello assessment(s):
 
 ---
 
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=consuming-external-apis)
+[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=consuming-server-apis)
