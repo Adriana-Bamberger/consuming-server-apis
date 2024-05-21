@@ -65,20 +65,6 @@ Some possibilities are listed below if you want a place to start, otherwise find
 If you're not sure where to start, you can use one of the APIs listed below.
 
 <details>
-  <summary>Simple APIs (no API key required or CORS restrictions)</summary>
-
-- https://www.boredapi.com: suggest a random activity
-- https://dog.ceo/dog-api: dog pictures
-- https://randomfox.ca/floof: random fox pictures
-- https://pokeapi.co/docs/v2: Pokémon
-- https://swapi.dev: Star Wars
-- https://disneyapi.dev/docs: Disney characters
-- https://open-meteo.com/: weather
-- https://wheretheiss.at/w/developer: get the latitude and longitude of the International Space Station
-</details>
-<br />
-
-<details>
   <summary>APIs with CORS restrictions (server-side proxy required)</summary>
 
 - https://www.affirmations.dev: positive affirmations/quotes
