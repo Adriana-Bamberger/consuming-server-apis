@@ -1,25 +1,36 @@
-import { getWelcome } from '../apiClient.ts'
 import { useQuery } from '@tanstack/react-query'
+import request from 'superagent'
 
 function App() {
-  const {
-    data: welcome,
-    isPending,
-    isError,
-  } = useQuery({
-    queryKey: ['welcome'],
-    queryFn: () => getWelcome(),
+  const { data, isPending, isError, error } = useQuery({
+    queryKey: ['cats'],
+    queryFn: async () => {
+      const res = await request.get('/api/v1/cats')
+      return res.body as CatImage[]
+    },
   })
-
   if (isPending) {
     return <p>Loading...</p>
   }
-
   if (isError) {
-    return <p>There was an error</p>
+    return <p> Opps! {String(error)}</p>
   }
-
-  return <h1>{welcome.statement}</h1>
+  return (
+    <ul>
+      {data.map((searchResult) => (
+        <li key={searchResult.id}>
+          <img
+            src={searchResult.url}
+            height={searchResult.height}
+            width={searchResult.width}
+            alt={'cat'}
+          />{' '}
+        </li>
+      ))}
+    </ul>
+  )
 }
+//   return <pre>{JSON.stringify(data, null, 2)}</pre>
+// }
 
 export default App

@@ -54,6 +54,7 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+#The Cat API, API key
 # dotenv environment variables file
 .env
 
@@ -65,3 +66,4 @@ bundle.*
 
 # Development databases
 dev.sqlite3
+
