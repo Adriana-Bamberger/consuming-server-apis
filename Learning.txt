@@ -1,0 +1,14 @@
+Going over what I've done.
+
+From top to bottom in the file order.
+
+Client/Components/App.tsx
+Imported things, 
+
+made a function  to show our app page, with our useQuery,
+- wich is kinda like a state of the page.
+in our case we used "data, isPending, isError, and error"
+not sure how error works but it magically explains what went wrong when somtign does go wrong.
+then used a query key, don't know what they do in the function but it doesn't work without them.
+
+make a async function inside that function 

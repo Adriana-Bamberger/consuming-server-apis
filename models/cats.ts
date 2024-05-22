@@ -1,4 +1,4 @@
-interface CatImage {
+export interface CatImage {
   id: string;
   url: string;
   width: number;
@@ -7,13 +7,13 @@ interface CatImage {
   categories?: Category[]; // Array of categories if available
 }
 
-interface Breed {
+export interface Breed {
   id: string;
   name: string;
   // Add more breed properties as needed (weight, temperament, etc.)
 }
 
-interface Category {
+export interface Category {
   id: number;
   name: string;
 }
