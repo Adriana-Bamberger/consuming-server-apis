@@ -12,3 +12,33 @@ not sure how error works but it magically explains what went wrong when somtign 
 then used a query key, don't know what they do in the function but it doesn't work without them.
 
 make a async function inside that function 
+use the req (request) res (responce).
+await for when we request the respone of ('api/v1/cats')
+return the (respone of our ).body as a formatted interface.
+thats typescript just telling us that if it doesn't look like this formet error! you might have somthing else.
+
+if it's pending return this while its pending,
+
+if you don't get the right thing, then return  the magical error
+
+and if you have recived somthing from that responce that matches our interface then display it as such.
+
+If it's pending, return loading text
+
+If theirs an error in finding the data, return the error.
+
+Else if you can and have found the data show it like so.
+
+we put this in an unordered list as it's an easy way ofdisplaying them down a page.
+
+Data is the variable we have asiged for the api as a whole 
+
+We use the .map to go over it and return just one part of it in a new array 
+
+Search resualt is a variable we have made just now in these brackets so that we can label our part of the api that we're working with.
+
+This is effectaly asigned a new name to our api data, but the array version of it.
+
+And then thourgh out the function we use dot notation to get parts out of our array to display or use them.
+
+And then we export the whole app fucntion so that we can import on our index.html wich is what the web calls first.

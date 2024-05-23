@@ -26,7 +26,14 @@ function App() {
   }
   // Else if you can and have found the data show it like so.
   return (
+    // we put this in an unordered list as it's an easy way ofdisplaying them down a page.
     <ul>
+      {/* data is the variable we have asiged for the api as a whole */}
+      {/* we use the .map to go over it and return just one part of it in a new array */}
+      {/* search resualt is a variable we have made just now in these brackets so that we can label our part of the api that we're working with. */}
+      {/* this is effectaly asigned a new name to our api data, but the array version of it. */}
+      {/* and then thourgh out the function we use dot notation to get parts out of our array to display or use them. */}
+
       {data.map((searchResult) => (
         <li key={searchResult.id}>
           <img
